@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Contact Me</title>
+    </head> 
+    <body>
+        <a id="top"></a>
+        <header>
+            <nav class="sub_nav">
+                <p><a href="index.html">Back to Home page</a></p>
+                <hr>
+            </nav>
+            <img src="contact.png" alt="Image of contact methods" id="contact_img">
+            <h1 class="contact_h1">Contact Doan Thien Di</h1>
+            <p class="contact_para">Please complete the form to reserve an appointment with Doan Thien Di.</p>
+        </header>
+        <main>
+            <form action="index.html" method="post">
+                <fieldset>
+                    <legend>About You</legend>
+                    <p class="contact_para">First name:<br>
+                       <input type='text' name='firstname' required/></p>
+                    <p class="contact_para">Last name:<br>
+                       <input type='text' name='lastname' required/></p>
+                    <p class="contact_para">Email:<br>
+                        <input type='email' name='email' required/></p>
+                    <p class="contact_para">Phone number:<br>
+                        <input type='tel' name='phone' required/></p>
+                    <p class="contact_para">Purpose of contact:<br>
+                        <input type='radio' name='purpose' value="Business" id="business" required/>
+                        <label for="business">Business</label>
+                        <input type='radio' name='purpose' value="Personal" id="personal" required/>
+                        <label for="personal">Personal</label></p>
+                    <p class="contact_para">Detail of Contact:<br>
+                        <textarea name="detail_of_contact" id="detail_of_contact" cols="30" rows="10"></textarea></p>
+                    <p class="contact_para">Book a day:
+                        <select name="day" id="day" required>
+                            <option value="">Please Select</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select></p>
+                        <br>
+                        <input type="submit" name="appoint" value="Submit">
+                        <input type="reset" name="reset" value="Reset">
+                  </fieldset>
+            </form>
+            <br>
+            <a href="#top">Back to top of page</a> 
+        </main>
+        <br>
+        <footer>
+            <h2 class="main_h2">Connect Via Social Media</h2><hr>
+            <ul class="connect">
+                <li id="facebook_contact"><a href="https://www.facebook.com/didoan322">Facebook</a></li>
+                <li id="youtube_contact"><a href="https://www.youtube.com/channel/UCKcj_uPqH44POBUCRkT7ACw">Youtube</a></li>
+            </ul>    
+        </footer>
+    </body>
